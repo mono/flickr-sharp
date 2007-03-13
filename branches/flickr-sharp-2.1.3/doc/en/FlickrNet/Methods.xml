@@ -1,0 +1,16 @@
+<Type Name="Methods" FullName="FlickrNet.Methods">
+  <TypeSignature Language="C#" Value="public class Methods" />
+  <AssemblyInfo>
+    <AssemblyName>flickr-sharp</AssemblyName>
+    <AssemblyVersion>2.0.3.28704</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Members />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

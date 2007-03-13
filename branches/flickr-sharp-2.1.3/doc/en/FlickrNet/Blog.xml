@@ -1,0 +1,90 @@
+<Type Name="Blog" FullName="FlickrNet.Blog">
+  <TypeSignature Language="C#" Value="public class Blog" />
+  <AssemblyInfo>
+    <AssemblyName>flickr-sharp</AssemblyName>
+    <AssemblyVersion>2.0.3.28704</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Blog ();" />
+      <MemberType>Constructor</MemberType>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BlogId">
+      <MemberSignature Language="C#" Value="public string BlogId;" />
+      <MemberType>Field</MemberType>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute(AttributeName="id", DataType="", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Namespace=null, Type=null)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BlogName">
+      <MemberSignature Language="C#" Value="public string BlogName;" />
+      <MemberType>Field</MemberType>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute(AttributeName="name", DataType="", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Namespace=null, Type=null)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BlogUrl">
+      <MemberSignature Language="C#" Value="public string BlogUrl;" />
+      <MemberType>Field</MemberType>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute(AttributeName="url", DataType="", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Namespace=null, Type=null)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NeedsPassword">
+      <MemberSignature Language="C#" Value="public int NeedsPassword;" />
+      <MemberType>Field</MemberType>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute(AttributeName="needspassword", DataType="", Form=System.Xml.Schema.XmlSchemaForm.None, Namespace=null, Type=null)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

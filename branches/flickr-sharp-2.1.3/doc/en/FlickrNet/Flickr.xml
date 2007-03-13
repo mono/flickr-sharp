@@ -1,0 +1,3636 @@
+<Type Name="Flickr" FullName="FlickrNet.Flickr">
+  <TypeSignature Language="C#" Value="public class Flickr" />
+  <AssemblyInfo>
+    <AssemblyName>flickr-sharp</AssemblyName>
+    <AssemblyVersion>2.0.3.28704</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Flickr ();" />
+      <MemberType>Constructor</MemberType>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Flickr (string apiKey);" />
+      <MemberType>Constructor</MemberType>
+      <Parameters>
+        <Parameter Name="apiKey" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="apiKey">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Flickr (string apiKey, string sharedSecret);" />
+      <MemberType>Constructor</MemberType>
+      <Parameters>
+        <Parameter Name="apiKey" Type="System.String" />
+        <Parameter Name="sharedSecret" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="apiKey">To be added.</param>
+        <param name="sharedSecret">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Flickr (string apiKey, string sharedSecret, string token);" />
+      <MemberType>Constructor</MemberType>
+      <Parameters>
+        <Parameter Name="apiKey" Type="System.String" />
+        <Parameter Name="sharedSecret" Type="System.String" />
+        <Parameter Name="token" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="apiKey">To be added.</param>
+        <param name="sharedSecret">To be added.</param>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnUploadProgress">
+      <MemberSignature Language="C#" Value="public event FlickrNet.Flickr+UploadProgressHandler OnUploadProgress;" />
+      <MemberType>Event</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Flickr+UploadProgressHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FlushCache">
+      <MemberSignature Language="C#" Value="public static void FlushCache ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FlushCache">
+      <MemberSignature Language="C#" Value="public static void FlushCache (string url);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="url" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="url">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCachePictures">
+      <MemberSignature Language="C#" Value="public static FlickrNet.PictureCacheItem[] GetCachePictures ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.PictureCacheItem[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DownloadPicture">
+      <MemberSignature Language="C#" Value="public System.IO.Stream DownloadPicture (string url);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="url" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="url">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AuthGetFrob">
+      <MemberSignature Language="C#" Value="public string AuthGetFrob ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AuthCalcUrl">
+      <MemberSignature Language="C#" Value="public string AuthCalcUrl (string frob, FlickrNet.AuthLevel authLevel);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="frob" Type="System.String" />
+        <Parameter Name="authLevel" Type="FlickrNet.AuthLevel" />
+      </Parameters>
+      <Docs>
+        <param name="frob">To be added.</param>
+        <param name="authLevel">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AuthCalcWebUrl">
+      <MemberSignature Language="C#" Value="public string AuthCalcWebUrl (FlickrNet.AuthLevel authLevel);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="authLevel" Type="FlickrNet.AuthLevel" />
+      </Parameters>
+      <Docs>
+        <param name="authLevel">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AuthGetToken">
+      <MemberSignature Language="C#" Value="public FlickrNet.Auth AuthGetToken (string frob);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Auth</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="frob" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="frob">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AuthGetFullToken">
+      <MemberSignature Language="C#" Value="public FlickrNet.Auth AuthGetFullToken (string miniToken);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Auth</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="miniToken" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="miniToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AuthCheckToken">
+      <MemberSignature Language="C#" Value="public FlickrNet.Auth AuthCheckToken (string token);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Auth</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="token" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UploadPicture">
+      <MemberSignature Language="C#" Value="public string UploadPicture (string filename);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="filename" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="filename">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UploadPicture">
+      <MemberSignature Language="C#" Value="public string UploadPicture (string filename, string title);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="filename" Type="System.String" />
+        <Parameter Name="title" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="filename">To be added.</param>
+        <param name="title">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UploadPicture">
+      <MemberSignature Language="C#" Value="public string UploadPicture (string filename, string title, string description);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="filename" Type="System.String" />
+        <Parameter Name="title" Type="System.String" />
+        <Parameter Name="description" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="filename">To be added.</param>
+        <param name="title">To be added.</param>
+        <param name="description">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UploadPicture">
+      <MemberSignature Language="C#" Value="public string UploadPicture (string filename, string title, string description, string tags);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="filename" Type="System.String" />
+        <Parameter Name="title" Type="System.String" />
+        <Parameter Name="description" Type="System.String" />
+        <Parameter Name="tags" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="filename">To be added.</param>
+        <param name="title">To be added.</param>
+        <param name="description">To be added.</param>
+        <param name="tags">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UploadPicture">
+      <MemberSignature Language="C#" Value="public string UploadPicture (string filename, string title, string description, string tags, bool isPublic, bool isFamily, bool isFriend);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="filename" Type="System.String" />
+        <Parameter Name="title" Type="System.String" />
+        <Parameter Name="description" Type="System.String" />
+        <Parameter Name="tags" Type="System.String" />
+        <Parameter Name="isPublic" Type="System.Boolean" />
+        <Parameter Name="isFamily" Type="System.Boolean" />
+        <Parameter Name="isFriend" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="filename">To be added.</param>
+        <param name="title">To be added.</param>
+        <param name="description">To be added.</param>
+        <param name="tags">To be added.</param>
+        <param name="isPublic">To be added.</param>
+        <param name="isFamily">To be added.</param>
+        <param name="isFriend">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UploadPicture">
+      <MemberSignature Language="C#" Value="public string UploadPicture (System.IO.Stream stream, string title, string description, string tags, int isPublic, int isFamily, int isFriend);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+        <Parameter Name="title" Type="System.String" />
+        <Parameter Name="description" Type="System.String" />
+        <Parameter Name="tags" Type="System.String" />
+        <Parameter Name="isPublic" Type="System.Int32" />
+        <Parameter Name="isFamily" Type="System.Int32" />
+        <Parameter Name="isFriend" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="stream">To be added.</param>
+        <param name="title">To be added.</param>
+        <param name="description">To be added.</param>
+        <param name="tags">To be added.</param>
+        <param name="isPublic">To be added.</param>
+        <param name="isFamily">To be added.</param>
+        <param name="isFriend">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReplacePicture">
+      <MemberSignature Language="C#" Value="public string ReplacePicture (string filename, string photoId);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="filename" Type="System.String" />
+        <Parameter Name="photoId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="filename">To be added.</param>
+        <param name="photoId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReplacePicture">
+      <MemberSignature Language="C#" Value="public string ReplacePicture (System.IO.Stream stream, string photoId);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+        <Parameter Name="photoId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="stream">To be added.</param>
+        <param name="photoId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BlogGetList">
+      <MemberSignature Language="C#" Value="public FlickrNet.Blogs BlogGetList ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Blogs</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BlogPostPhoto">
+      <MemberSignature Language="C#" Value="public bool BlogPostPhoto (string blogId, string photoId, string title, string description);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="blogId" Type="System.String" />
+        <Parameter Name="photoId" Type="System.String" />
+        <Parameter Name="title" Type="System.String" />
+        <Parameter Name="description" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="blogId">To be added.</param>
+        <param name="photoId">To be added.</param>
+        <param name="title">To be added.</param>
+        <param name="description">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BlogPostPhoto">
+      <MemberSignature Language="C#" Value="public bool BlogPostPhoto (string blogId, string photoId, string title, string description, string blogPassword);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="blogId" Type="System.String" />
+        <Parameter Name="photoId" Type="System.String" />
+        <Parameter Name="title" Type="System.String" />
+        <Parameter Name="description" Type="System.String" />
+        <Parameter Name="blogPassword" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="blogId">To be added.</param>
+        <param name="photoId">To be added.</param>
+        <param name="title">To be added.</param>
+        <param name="description">To be added.</param>
+        <param name="blogPassword">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContactsGetList">
+      <MemberSignature Language="C#" Value="public FlickrNet.Contacts ContactsGetList ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Contacts</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContactsGetPublicList">
+      <MemberSignature Language="C#" Value="public FlickrNet.Contacts ContactsGetPublicList (string userId);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Contacts</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="userId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FavoritesAdd">
+      <MemberSignature Language="C#" Value="public bool FavoritesAdd (string photoId);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="photoId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="photoId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FavoritesRemove">
+      <MemberSignature Language="C#" Value="public bool FavoritesRemove (string photoId);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="photoId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="photoId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FavoritesGetList">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos FavoritesGetList ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FavoritesGetList">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos FavoritesGetList (int perPage, int page);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="perPage" Type="System.Int32" />
+        <Parameter Name="page" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="perPage">To be added.</param>
+        <param name="page">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FavoritesGetList">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos FavoritesGetList (string userId);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="userId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FavoritesGetList">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos FavoritesGetList (string userId, int perPage, int page);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="perPage" Type="System.Int32" />
+        <Parameter Name="page" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="userId">To be added.</param>
+        <param name="perPage">To be added.</param>
+        <param name="page">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FavoritesGetPublicList">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos FavoritesGetPublicList (string userId);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="userId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FavoritesGetPublicList">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos FavoritesGetPublicList (string userId, int perPage, int page);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="perPage" Type="System.Int32" />
+        <Parameter Name="page" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="userId">To be added.</param>
+        <param name="perPage">To be added.</param>
+        <param name="page">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupsBrowse">
+      <MemberSignature Language="C#" Value="public FlickrNet.Category GroupsBrowse ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Category</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupsBrowse">
+      <MemberSignature Language="C#" Value="public FlickrNet.Category GroupsBrowse (string catId);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Category</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="catId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="catId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupsSearch">
+      <MemberSignature Language="C#" Value="public FlickrNet.GroupSearchResults GroupsSearch (string text);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.GroupSearchResults</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="text">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupsSearch">
+      <MemberSignature Language="C#" Value="public FlickrNet.GroupSearchResults GroupsSearch (string text, int page);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.GroupSearchResults</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="page" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="text">To be added.</param>
+        <param name="page">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupsSearch">
+      <MemberSignature Language="C#" Value="public FlickrNet.GroupSearchResults GroupsSearch (string text, int page, int perPage);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.GroupSearchResults</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="page" Type="System.Int32" />
+        <Parameter Name="perPage" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="text">To be added.</param>
+        <param name="page">To be added.</param>
+        <param name="perPage">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupsGetInfo">
+      <MemberSignature Language="C#" Value="public FlickrNet.GroupFullInfo GroupsGetInfo (string groupId);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.GroupFullInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="groupId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="groupId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupPoolAdd">
+      <MemberSignature Language="C#" Value="public bool GroupPoolAdd (string photoId, string groupId);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="photoId" Type="System.String" />
+        <Parameter Name="groupId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="photoId">To be added.</param>
+        <param name="groupId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupPoolGetContext">
+      <MemberSignature Language="C#" Value="public FlickrNet.Context GroupPoolGetContext (string photoId, string groupId);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Context</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="photoId" Type="System.String" />
+        <Parameter Name="groupId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="photoId">To be added.</param>
+        <param name="groupId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupPoolRemove">
+      <MemberSignature Language="C#" Value="public bool GroupPoolRemove (string photoId, string groupId);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="photoId" Type="System.String" />
+        <Parameter Name="groupId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="photoId">To be added.</param>
+        <param name="groupId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupPoolGetGroups">
+      <MemberSignature Language="C#" Value="public FlickrNet.MemberGroupInfo[] GroupPoolGetGroups ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.MemberGroupInfo[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupPoolGetPhotos">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos GroupPoolGetPhotos (string groupId);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="groupId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="groupId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupPoolGetPhotos">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos GroupPoolGetPhotos (string groupId, string tags);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="groupId" Type="System.String" />
+        <Parameter Name="tags" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="groupId">To be added.</param>
+        <param name="tags">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupPoolGetPhotos">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos GroupPoolGetPhotos (string groupId, int perPage, int page);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="groupId" Type="System.String" />
+        <Parameter Name="perPage" Type="System.Int32" />
+        <Parameter Name="page" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="groupId">To be added.</param>
+        <param name="perPage">To be added.</param>
+        <param name="page">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupPoolGetPhotos">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos GroupPoolGetPhotos (string groupId, string tags, int perPage, int page);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="groupId" Type="System.String" />
+        <Parameter Name="tags" Type="System.String" />
+        <Parameter Name="perPage" Type="System.Int32" />
+        <Parameter Name="page" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="groupId">To be added.</param>
+        <param name="tags">To be added.</param>
+        <param name="perPage">To be added.</param>
+        <param name="page">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupPoolGetPhotos">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos GroupPoolGetPhotos (string groupId, string tags, string userId, FlickrNet.PhotoSearchExtras extras, int perPage, int page);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="groupId" Type="System.String" />
+        <Parameter Name="tags" Type="System.String" />
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="extras" Type="FlickrNet.PhotoSearchExtras" />
+        <Parameter Name="perPage" Type="System.Int32" />
+        <Parameter Name="page" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="groupId">To be added.</param>
+        <param name="tags">To be added.</param>
+        <param name="userId">To be added.</param>
+        <param name="extras">To be added.</param>
+        <param name="perPage">To be added.</param>
+        <param name="page">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InterestingnessGetList">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos InterestingnessGetList (FlickrNet.PhotoSearchExtras extras, int perPage, int page);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="extras" Type="FlickrNet.PhotoSearchExtras" />
+        <Parameter Name="perPage" Type="System.Int32" />
+        <Parameter Name="page" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="extras">To be added.</param>
+        <param name="perPage">To be added.</param>
+        <param name="page">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InterestingnessGetList">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos InterestingnessGetList (DateTime date);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="date" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="date">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InterestingnessGetList">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos InterestingnessGetList ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InterestingnessGetList">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos InterestingnessGetList (DateTime date, FlickrNet.PhotoSearchExtras extras, int perPage, int page);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="date" Type="System.DateTime" />
+        <Parameter Name="extras" Type="FlickrNet.PhotoSearchExtras" />
+        <Parameter Name="perPage" Type="System.Int32" />
+        <Parameter Name="page" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="date">To be added.</param>
+        <param name="extras">To be added.</param>
+        <param name="perPage">To be added.</param>
+        <param name="page">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NotesAdd">
+      <MemberSignature Language="C#" Value="public string NotesAdd (string photoId, int noteX, int noteY, int noteWidth, int noteHeight, string noteText);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="photoId" Type="System.String" />
+        <Parameter Name="noteX" Type="System.Int32" />
+        <Parameter Name="noteY" Type="System.Int32" />
+        <Parameter Name="noteWidth" Type="System.Int32" />
+        <Parameter Name="noteHeight" Type="System.Int32" />
+        <Parameter Name="noteText" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="photoId">To be added.</param>
+        <param name="noteX">To be added.</param>
+        <param name="noteY">To be added.</param>
+        <param name="noteWidth">To be added.</param>
+        <param name="noteHeight">To be added.</param>
+        <param name="noteText">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NotesEdit">
+      <MemberSignature Language="C#" Value="public void NotesEdit (string noteId, int noteX, int noteY, int noteWidth, int noteHeight, string noteText);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="noteId" Type="System.String" />
+        <Parameter Name="noteX" Type="System.Int32" />
+        <Parameter Name="noteY" Type="System.Int32" />
+        <Parameter Name="noteWidth" Type="System.Int32" />
+        <Parameter Name="noteHeight" Type="System.Int32" />
+        <Parameter Name="noteText" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="noteId">To be added.</param>
+        <param name="noteX">To be added.</param>
+        <param name="noteY">To be added.</param>
+        <param name="noteWidth">To be added.</param>
+        <param name="noteHeight">To be added.</param>
+        <param name="noteText">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NotesDelete">
+      <MemberSignature Language="C#" Value="public void NotesDelete (string noteId);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="noteId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="noteId">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PeopleFindByEmail">
+      <MemberSignature Language="C#" Value="public FlickrNet.FoundUser PeopleFindByEmail (string emailAddress);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.FoundUser</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="emailAddress" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="emailAddress">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PeopleFindByUsername">
+      <MemberSignature Language="C#" Value="public FlickrNet.FoundUser PeopleFindByUsername (string username);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.FoundUser</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="username" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="username">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PeopleGetInfo">
+      <MemberSignature Language="C#" Value="public FlickrNet.Person PeopleGetInfo (string userId);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Person</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="userId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PeopleGetUploadStatus">
+      <MemberSignature Language="C#" Value="public FlickrNet.UserStatus PeopleGetUploadStatus ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.UserStatus</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PeopleGetPublicGroups">
+      <MemberSignature Language="C#" Value="public FlickrNet.PublicGroupInfo[] PeopleGetPublicGroups (string userId);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.PublicGroupInfo[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="userId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PeopleGetPublicPhotos">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PeopleGetPublicPhotos (string userId);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="userId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosAddTags">
+      <MemberSignature Language="C#" Value="public void PhotosAddTags (string photoId, string[] tags);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="photoId" Type="System.String" />
+        <Parameter Name="tags" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="photoId">To be added.</param>
+        <param name="tags">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosAddTags">
+      <MemberSignature Language="C#" Value="public void PhotosAddTags (string photoId, string tags);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="photoId" Type="System.String" />
+        <Parameter Name="tags" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="photoId">To be added.</param>
+        <param name="tags">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosDelete">
+      <MemberSignature Language="C#" Value="public void PhotosDelete (string photoId);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="photoId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="photoId">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosGetAllContexts">
+      <MemberSignature Language="C#" Value="public FlickrNet.AllContexts PhotosGetAllContexts (string photoId);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.AllContexts</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="photoId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="photoId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosGetContactsPhotos">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosGetContactsPhotos ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosGetContactsPhotos">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosGetContactsPhotos (long count);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="count" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="count">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosGetContactsPhotos">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosGetContactsPhotos (long count, bool justFriends, bool singlePhoto, bool includeSelf);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="count" Type="System.Int64" />
+        <Parameter Name="justFriends" Type="System.Boolean" />
+        <Parameter Name="singlePhoto" Type="System.Boolean" />
+        <Parameter Name="includeSelf" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="count">To be added.</param>
+        <param name="justFriends">To be added.</param>
+        <param name="singlePhoto">To be added.</param>
+        <param name="includeSelf">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosGetContactsPublicPhotos">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosGetContactsPublicPhotos (string userId);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="userId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosGetContactsPublicPhotos">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosGetContactsPublicPhotos (string userId, FlickrNet.PhotoSearchExtras extras);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="extras" Type="FlickrNet.PhotoSearchExtras" />
+      </Parameters>
+      <Docs>
+        <param name="userId">To be added.</param>
+        <param name="extras">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosGetContactsPublicPhotos">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosGetContactsPublicPhotos (string userId, long count);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="count" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="userId">To be added.</param>
+        <param name="count">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosGetContactsPublicPhotos">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosGetContactsPublicPhotos (string userId, long count, FlickrNet.PhotoSearchExtras extras);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="count" Type="System.Int64" />
+        <Parameter Name="extras" Type="FlickrNet.PhotoSearchExtras" />
+      </Parameters>
+      <Docs>
+        <param name="userId">To be added.</param>
+        <param name="count">To be added.</param>
+        <param name="extras">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosGetContactsPublicPhotos">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosGetContactsPublicPhotos (string userId, long count, bool justFriends, bool singlePhoto, bool includeSelf);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="count" Type="System.Int64" />
+        <Parameter Name="justFriends" Type="System.Boolean" />
+        <Parameter Name="singlePhoto" Type="System.Boolean" />
+        <Parameter Name="includeSelf" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="userId">To be added.</param>
+        <param name="count">To be added.</param>
+        <param name="justFriends">To be added.</param>
+        <param name="singlePhoto">To be added.</param>
+        <param name="includeSelf">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosGetContactsPublicPhotos">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosGetContactsPublicPhotos (string userId, long count, bool justFriends, bool singlePhoto, bool includeSelf, FlickrNet.PhotoSearchExtras extras);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="count" Type="System.Int64" />
+        <Parameter Name="justFriends" Type="System.Boolean" />
+        <Parameter Name="singlePhoto" Type="System.Boolean" />
+        <Parameter Name="includeSelf" Type="System.Boolean" />
+        <Parameter Name="extras" Type="FlickrNet.PhotoSearchExtras" />
+      </Parameters>
+      <Docs>
+        <param name="userId">To be added.</param>
+        <param name="count">To be added.</param>
+        <param name="justFriends">To be added.</param>
+        <param name="singlePhoto">To be added.</param>
+        <param name="includeSelf">To be added.</param>
+        <param name="extras">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosGetContext">
+      <MemberSignature Language="C#" Value="public FlickrNet.Context PhotosGetContext (string photoId);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Context</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="photoId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="photoId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosGetCounts">
+      <MemberSignature Language="C#" Value="public FlickrNet.PhotoCounts PhotosGetCounts (DateTime[] dates);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.PhotoCounts</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dates" Type="System.DateTime[]" />
+      </Parameters>
+      <Docs>
+        <param name="dates">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosGetCounts">
+      <MemberSignature Language="C#" Value="public FlickrNet.PhotoCounts PhotosGetCounts (DateTime[] dates, bool taken);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.PhotoCounts</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dates" Type="System.DateTime[]" />
+        <Parameter Name="taken" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="dates">To be added.</param>
+        <param name="taken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosGetCounts">
+      <MemberSignature Language="C#" Value="public FlickrNet.PhotoCounts PhotosGetCounts (string dates);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.PhotoCounts</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dates" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="dates">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosGetCounts">
+      <MemberSignature Language="C#" Value="public FlickrNet.PhotoCounts PhotosGetCounts (string dates, string taken_dates);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.PhotoCounts</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dates" Type="System.String" />
+        <Parameter Name="taken_dates" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="dates">To be added.</param>
+        <param name="taken_dates">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosGetExif">
+      <MemberSignature Language="C#" Value="public FlickrNet.ExifPhoto PhotosGetExif (string photoId);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.ExifPhoto</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="photoId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="photoId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosGetExif">
+      <MemberSignature Language="C#" Value="public FlickrNet.ExifPhoto PhotosGetExif (string photoId, string secret);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.ExifPhoto</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="photoId" Type="System.String" />
+        <Parameter Name="secret" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="photoId">To be added.</param>
+        <param name="secret">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosGetInfo">
+      <MemberSignature Language="C#" Value="public FlickrNet.PhotoInfo PhotosGetInfo (string photoId);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.PhotoInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="photoId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="photoId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosGetInfo">
+      <MemberSignature Language="C#" Value="public FlickrNet.PhotoInfo PhotosGetInfo (string photoId, string secret);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.PhotoInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="photoId" Type="System.String" />
+        <Parameter Name="secret" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="photoId">To be added.</param>
+        <param name="secret">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosGetPerms">
+      <MemberSignature Language="C#" Value="public FlickrNet.PhotoPermissions PhotosGetPerms (string photoId);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.PhotoPermissions</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="photoId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="photoId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosGetRecent">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosGetRecent ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosGetRecent">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosGetRecent (FlickrNet.PhotoSearchExtras extras);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="extras" Type="FlickrNet.PhotoSearchExtras" />
+      </Parameters>
+      <Docs>
+        <param name="extras">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosGetRecent">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosGetRecent (long perPage, long page);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="perPage" Type="System.Int64" />
+        <Parameter Name="page" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="perPage">To be added.</param>
+        <param name="page">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosGetRecent">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosGetRecent (long perPage, long page, FlickrNet.PhotoSearchExtras extras);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="perPage" Type="System.Int64" />
+        <Parameter Name="page" Type="System.Int64" />
+        <Parameter Name="extras" Type="FlickrNet.PhotoSearchExtras" />
+      </Parameters>
+      <Docs>
+        <param name="perPage">To be added.</param>
+        <param name="page">To be added.</param>
+        <param name="extras">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosGetSizes">
+      <MemberSignature Language="C#" Value="public FlickrNet.Sizes PhotosGetSizes (string photoId);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Sizes</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="photoId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="photoId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosGetUntagged">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosGetUntagged ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosGetUntagged">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosGetUntagged (FlickrNet.PhotoSearchExtras extras);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="extras" Type="FlickrNet.PhotoSearchExtras" />
+      </Parameters>
+      <Docs>
+        <param name="extras">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosGetUntagged">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosGetUntagged (int perPage, int page);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="perPage" Type="System.Int32" />
+        <Parameter Name="page" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="perPage">To be added.</param>
+        <param name="page">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosGetUntagged">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosGetUntagged (int perPage, int page, FlickrNet.PhotoSearchExtras extras);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="perPage" Type="System.Int32" />
+        <Parameter Name="page" Type="System.Int32" />
+        <Parameter Name="extras" Type="FlickrNet.PhotoSearchExtras" />
+      </Parameters>
+      <Docs>
+        <param name="perPage">To be added.</param>
+        <param name="page">To be added.</param>
+        <param name="extras">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosGetNotInSet">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosGetNotInSet ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosGetNotInSet">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosGetNotInSet (int page);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="page" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="page">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosGetNotInSet">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosGetNotInSet (int perPage, int page);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="perPage" Type="System.Int32" />
+        <Parameter Name="page" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="perPage">To be added.</param>
+        <param name="page">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosGetNotInSet">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosGetNotInSet (int perPage, int page, FlickrNet.PhotoSearchExtras extras);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="perPage" Type="System.Int32" />
+        <Parameter Name="page" Type="System.Int32" />
+        <Parameter Name="extras" Type="FlickrNet.PhotoSearchExtras" />
+      </Parameters>
+      <Docs>
+        <param name="perPage">To be added.</param>
+        <param name="page">To be added.</param>
+        <param name="extras">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosLicensesGetInfo">
+      <MemberSignature Language="C#" Value="public FlickrNet.Licenses PhotosLicensesGetInfo ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Licenses</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosRemoveTag">
+      <MemberSignature Language="C#" Value="public bool PhotosRemoveTag (string tagId);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tagId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="tagId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosSearchText">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosSearchText (string userId, string text);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="userId">To be added.</param>
+        <param name="text">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosSearchText">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosSearchText (string userId, string text, FlickrNet.PhotoSearchExtras extras);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="extras" Type="FlickrNet.PhotoSearchExtras" />
+      </Parameters>
+      <Docs>
+        <param name="userId">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="extras">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosSearchText">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosSearchText (string userId, string text, int license);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="license" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="userId">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="license">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosSearchText">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosSearchText (string userId, string text, int license, FlickrNet.PhotoSearchExtras extras);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="license" Type="System.Int32" />
+        <Parameter Name="extras" Type="FlickrNet.PhotoSearchExtras" />
+      </Parameters>
+      <Docs>
+        <param name="userId">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="license">To be added.</param>
+        <param name="extras">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosSearchText">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosSearchText (string text, FlickrNet.PhotoSearchExtras extras);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="extras" Type="FlickrNet.PhotoSearchExtras" />
+      </Parameters>
+      <Docs>
+        <param name="text">To be added.</param>
+        <param name="extras">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosSearchText">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosSearchText (string text);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="text">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosSearchText">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosSearchText (string text, int license);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="license" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="text">To be added.</param>
+        <param name="license">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosSearchText">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosSearchText (string text, int license, FlickrNet.PhotoSearchExtras extras);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="license" Type="System.Int32" />
+        <Parameter Name="extras" Type="FlickrNet.PhotoSearchExtras" />
+      </Parameters>
+      <Docs>
+        <param name="text">To be added.</param>
+        <param name="license">To be added.</param>
+        <param name="extras">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosSearch">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosSearch (string[] tags, FlickrNet.PhotoSearchExtras extras);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tags" Type="System.String[]" />
+        <Parameter Name="extras" Type="FlickrNet.PhotoSearchExtras" />
+      </Parameters>
+      <Docs>
+        <param name="tags">To be added.</param>
+        <param name="extras">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosSearch">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosSearch (string[] tags);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tags" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="tags">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosSearch">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosSearch (string[] tags, int license, FlickrNet.PhotoSearchExtras extras);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tags" Type="System.String[]" />
+        <Parameter Name="license" Type="System.Int32" />
+        <Parameter Name="extras" Type="FlickrNet.PhotoSearchExtras" />
+      </Parameters>
+      <Docs>
+        <param name="tags">To be added.</param>
+        <param name="license">To be added.</param>
+        <param name="extras">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosSearch">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosSearch (string[] tags, int license);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tags" Type="System.String[]" />
+        <Parameter Name="license" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="tags">To be added.</param>
+        <param name="license">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosSearch">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosSearch (string[] tags, FlickrNet.TagMode tagMode, string text, int perPage, int page);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tags" Type="System.String[]" />
+        <Parameter Name="tagMode" Type="FlickrNet.TagMode" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="perPage" Type="System.Int32" />
+        <Parameter Name="page" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="tags">To be added.</param>
+        <param name="tagMode">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="perPage">To be added.</param>
+        <param name="page">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosSearch">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosSearch (string[] tags, FlickrNet.TagMode tagMode, string text, int perPage, int page, FlickrNet.PhotoSearchExtras extras);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tags" Type="System.String[]" />
+        <Parameter Name="tagMode" Type="FlickrNet.TagMode" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="perPage" Type="System.Int32" />
+        <Parameter Name="page" Type="System.Int32" />
+        <Parameter Name="extras" Type="FlickrNet.PhotoSearchExtras" />
+      </Parameters>
+      <Docs>
+        <param name="tags">To be added.</param>
+        <param name="tagMode">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="perPage">To be added.</param>
+        <param name="page">To be added.</param>
+        <param name="extras">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosSearch">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosSearch (string[] tags, FlickrNet.TagMode tagMode, string text);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tags" Type="System.String[]" />
+        <Parameter Name="tagMode" Type="FlickrNet.TagMode" />
+        <Parameter Name="text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="tags">To be added.</param>
+        <param name="tagMode">To be added.</param>
+        <param name="text">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosSearch">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosSearch (string[] tags, FlickrNet.TagMode tagMode, string text, FlickrNet.PhotoSearchExtras extras);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tags" Type="System.String[]" />
+        <Parameter Name="tagMode" Type="FlickrNet.TagMode" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="extras" Type="FlickrNet.PhotoSearchExtras" />
+      </Parameters>
+      <Docs>
+        <param name="tags">To be added.</param>
+        <param name="tagMode">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="extras">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosSearch">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosSearch (string userId, string[] tags);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="tags" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="userId">To be added.</param>
+        <param name="tags">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosSearch">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosSearch (string userId, string[] tags, FlickrNet.PhotoSearchExtras extras);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="tags" Type="System.String[]" />
+        <Parameter Name="extras" Type="FlickrNet.PhotoSearchExtras" />
+      </Parameters>
+      <Docs>
+        <param name="userId">To be added.</param>
+        <param name="tags">To be added.</param>
+        <param name="extras">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosSearch">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosSearch (string userId, string[] tags, int license);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="tags" Type="System.String[]" />
+        <Parameter Name="license" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="userId">To be added.</param>
+        <param name="tags">To be added.</param>
+        <param name="license">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosSearch">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosSearch (string userId, string[] tags, int license, FlickrNet.PhotoSearchExtras extras);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="tags" Type="System.String[]" />
+        <Parameter Name="license" Type="System.Int32" />
+        <Parameter Name="extras" Type="FlickrNet.PhotoSearchExtras" />
+      </Parameters>
+      <Docs>
+        <param name="userId">To be added.</param>
+        <param name="tags">To be added.</param>
+        <param name="license">To be added.</param>
+        <param name="extras">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosSearch">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosSearch (string userId, string[] tags, FlickrNet.TagMode tagMode, string text, int perPage, int page);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="tags" Type="System.String[]" />
+        <Parameter Name="tagMode" Type="FlickrNet.TagMode" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="perPage" Type="System.Int32" />
+        <Parameter Name="page" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="userId">To be added.</param>
+        <param name="tags">To be added.</param>
+        <param name="tagMode">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="perPage">To be added.</param>
+        <param name="page">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosSearch">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosSearch (string userId, string[] tags, FlickrNet.TagMode tagMode, string text, int perPage, int page, FlickrNet.PhotoSearchExtras extras);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="tags" Type="System.String[]" />
+        <Parameter Name="tagMode" Type="FlickrNet.TagMode" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="perPage" Type="System.Int32" />
+        <Parameter Name="page" Type="System.Int32" />
+        <Parameter Name="extras" Type="FlickrNet.PhotoSearchExtras" />
+      </Parameters>
+      <Docs>
+        <param name="userId">To be added.</param>
+        <param name="tags">To be added.</param>
+        <param name="tagMode">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="perPage">To be added.</param>
+        <param name="page">To be added.</param>
+        <param name="extras">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosSearch">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosSearch (string userId, string[] tags, FlickrNet.TagMode tagMode, string text);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="tags" Type="System.String[]" />
+        <Parameter Name="tagMode" Type="FlickrNet.TagMode" />
+        <Parameter Name="text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="userId">To be added.</param>
+        <param name="tags">To be added.</param>
+        <param name="tagMode">To be added.</param>
+        <param name="text">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosSearch">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosSearch (string userId, string[] tags, FlickrNet.TagMode tagMode, string text, FlickrNet.PhotoSearchExtras extras);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="tags" Type="System.String[]" />
+        <Parameter Name="tagMode" Type="FlickrNet.TagMode" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="extras" Type="FlickrNet.PhotoSearchExtras" />
+      </Parameters>
+      <Docs>
+        <param name="userId">To be added.</param>
+        <param name="tags">To be added.</param>
+        <param name="tagMode">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="extras">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosSearch">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosSearch (string userId, string[] tags, FlickrNet.TagMode tagMode, string text, DateTime minUploadDate, DateTime maxUploadDate, int license, int perPage, int page, FlickrNet.PhotoSearchExtras extras);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="tags" Type="System.String[]" />
+        <Parameter Name="tagMode" Type="FlickrNet.TagMode" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="minUploadDate" Type="System.DateTime" />
+        <Parameter Name="maxUploadDate" Type="System.DateTime" />
+        <Parameter Name="license" Type="System.Int32" />
+        <Parameter Name="perPage" Type="System.Int32" />
+        <Parameter Name="page" Type="System.Int32" />
+        <Parameter Name="extras" Type="FlickrNet.PhotoSearchExtras" />
+      </Parameters>
+      <Docs>
+        <param name="userId">To be added.</param>
+        <param name="tags">To be added.</param>
+        <param name="tagMode">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="minUploadDate">To be added.</param>
+        <param name="maxUploadDate">To be added.</param>
+        <param name="license">To be added.</param>
+        <param name="perPage">To be added.</param>
+        <param name="page">To be added.</param>
+        <param name="extras">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosSearch">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosSearch (string userId, string[] tags, FlickrNet.TagMode tagMode, string text, DateTime minUploadDate, DateTime maxUploadDate, int license, int perPage, int page);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="tags" Type="System.String[]" />
+        <Parameter Name="tagMode" Type="FlickrNet.TagMode" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="minUploadDate" Type="System.DateTime" />
+        <Parameter Name="maxUploadDate" Type="System.DateTime" />
+        <Parameter Name="license" Type="System.Int32" />
+        <Parameter Name="perPage" Type="System.Int32" />
+        <Parameter Name="page" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="userId">To be added.</param>
+        <param name="tags">To be added.</param>
+        <param name="tagMode">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="minUploadDate">To be added.</param>
+        <param name="maxUploadDate">To be added.</param>
+        <param name="license">To be added.</param>
+        <param name="perPage">To be added.</param>
+        <param name="page">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosSearch">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosSearch (string tags, int license, FlickrNet.PhotoSearchExtras extras);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tags" Type="System.String" />
+        <Parameter Name="license" Type="System.Int32" />
+        <Parameter Name="extras" Type="FlickrNet.PhotoSearchExtras" />
+      </Parameters>
+      <Docs>
+        <param name="tags">To be added.</param>
+        <param name="license">To be added.</param>
+        <param name="extras">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosSearch">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosSearch (string tags, int license);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tags" Type="System.String" />
+        <Parameter Name="license" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="tags">To be added.</param>
+        <param name="license">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosSearch">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosSearch (string tags, FlickrNet.TagMode tagMode, string text, int perPage, int page);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tags" Type="System.String" />
+        <Parameter Name="tagMode" Type="FlickrNet.TagMode" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="perPage" Type="System.Int32" />
+        <Parameter Name="page" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="tags">To be added.</param>
+        <param name="tagMode">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="perPage">To be added.</param>
+        <param name="page">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosSearch">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosSearch (string tags, FlickrNet.TagMode tagMode, string text, int perPage, int page, FlickrNet.PhotoSearchExtras extras);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tags" Type="System.String" />
+        <Parameter Name="tagMode" Type="FlickrNet.TagMode" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="perPage" Type="System.Int32" />
+        <Parameter Name="page" Type="System.Int32" />
+        <Parameter Name="extras" Type="FlickrNet.PhotoSearchExtras" />
+      </Parameters>
+      <Docs>
+        <param name="tags">To be added.</param>
+        <param name="tagMode">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="perPage">To be added.</param>
+        <param name="page">To be added.</param>
+        <param name="extras">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosSearch">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosSearch (string tags, FlickrNet.TagMode tagMode, string text);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tags" Type="System.String" />
+        <Parameter Name="tagMode" Type="FlickrNet.TagMode" />
+        <Parameter Name="text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="tags">To be added.</param>
+        <param name="tagMode">To be added.</param>
+        <param name="text">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosSearch">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosSearch (string tags, FlickrNet.TagMode tagMode, string text, FlickrNet.PhotoSearchExtras extras);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tags" Type="System.String" />
+        <Parameter Name="tagMode" Type="FlickrNet.TagMode" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="extras" Type="FlickrNet.PhotoSearchExtras" />
+      </Parameters>
+      <Docs>
+        <param name="tags">To be added.</param>
+        <param name="tagMode">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="extras">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosSearch">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosSearch (string userId, string tags);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="tags" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="userId">To be added.</param>
+        <param name="tags">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosSearch">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosSearch (string userId, string tags, FlickrNet.PhotoSearchExtras extras);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="tags" Type="System.String" />
+        <Parameter Name="extras" Type="FlickrNet.PhotoSearchExtras" />
+      </Parameters>
+      <Docs>
+        <param name="userId">To be added.</param>
+        <param name="tags">To be added.</param>
+        <param name="extras">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosSearch">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosSearch (string userId, string tags, int license);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="tags" Type="System.String" />
+        <Parameter Name="license" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="userId">To be added.</param>
+        <param name="tags">To be added.</param>
+        <param name="license">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosSearch">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosSearch (string userId, string tags, int license, FlickrNet.PhotoSearchExtras extras);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="tags" Type="System.String" />
+        <Parameter Name="license" Type="System.Int32" />
+        <Parameter Name="extras" Type="FlickrNet.PhotoSearchExtras" />
+      </Parameters>
+      <Docs>
+        <param name="userId">To be added.</param>
+        <param name="tags">To be added.</param>
+        <param name="license">To be added.</param>
+        <param name="extras">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosSearch">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosSearch (string userId, string tags, FlickrNet.TagMode tagMode, string text, int perPage, int page);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="tags" Type="System.String" />
+        <Parameter Name="tagMode" Type="FlickrNet.TagMode" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="perPage" Type="System.Int32" />
+        <Parameter Name="page" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="userId">To be added.</param>
+        <param name="tags">To be added.</param>
+        <param name="tagMode">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="perPage">To be added.</param>
+        <param name="page">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosSearch">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosSearch (string userId, string tags, FlickrNet.TagMode tagMode, string text, int perPage, int page, FlickrNet.PhotoSearchExtras extras);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="tags" Type="System.String" />
+        <Parameter Name="tagMode" Type="FlickrNet.TagMode" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="perPage" Type="System.Int32" />
+        <Parameter Name="page" Type="System.Int32" />
+        <Parameter Name="extras" Type="FlickrNet.PhotoSearchExtras" />
+      </Parameters>
+      <Docs>
+        <param name="userId">To be added.</param>
+        <param name="tags">To be added.</param>
+        <param name="tagMode">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="perPage">To be added.</param>
+        <param name="page">To be added.</param>
+        <param name="extras">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosSearch">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosSearch (string userId, string tags, FlickrNet.TagMode tagMode, string text);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="tags" Type="System.String" />
+        <Parameter Name="tagMode" Type="FlickrNet.TagMode" />
+        <Parameter Name="text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="userId">To be added.</param>
+        <param name="tags">To be added.</param>
+        <param name="tagMode">To be added.</param>
+        <param name="text">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosSearch">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosSearch (string userId, string tags, FlickrNet.TagMode tagMode, string text, FlickrNet.PhotoSearchExtras extras);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="tags" Type="System.String" />
+        <Parameter Name="tagMode" Type="FlickrNet.TagMode" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="extras" Type="FlickrNet.PhotoSearchExtras" />
+      </Parameters>
+      <Docs>
+        <param name="userId">To be added.</param>
+        <param name="tags">To be added.</param>
+        <param name="tagMode">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="extras">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosSearch">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosSearch (string userId, string tags, FlickrNet.TagMode tagMode, string text, DateTime minUploadDate, DateTime maxUploadDate, int license, int perPage, int page, FlickrNet.PhotoSearchExtras extras);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="tags" Type="System.String" />
+        <Parameter Name="tagMode" Type="FlickrNet.TagMode" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="minUploadDate" Type="System.DateTime" />
+        <Parameter Name="maxUploadDate" Type="System.DateTime" />
+        <Parameter Name="license" Type="System.Int32" />
+        <Parameter Name="perPage" Type="System.Int32" />
+        <Parameter Name="page" Type="System.Int32" />
+        <Parameter Name="extras" Type="FlickrNet.PhotoSearchExtras" />
+      </Parameters>
+      <Docs>
+        <param name="userId">To be added.</param>
+        <param name="tags">To be added.</param>
+        <param name="tagMode">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="minUploadDate">To be added.</param>
+        <param name="maxUploadDate">To be added.</param>
+        <param name="license">To be added.</param>
+        <param name="perPage">To be added.</param>
+        <param name="page">To be added.</param>
+        <param name="extras">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosSearch">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photos PhotosSearch (FlickrNet.PhotoSearchOptions options);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="FlickrNet.PhotoSearchOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosSetDates">
+      <MemberSignature Language="C#" Value="public bool PhotosSetDates (string photoId, DateTime dateTaken, FlickrNet.DateGranularity granularity);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="photoId" Type="System.String" />
+        <Parameter Name="dateTaken" Type="System.DateTime" />
+        <Parameter Name="granularity" Type="FlickrNet.DateGranularity" />
+      </Parameters>
+      <Docs>
+        <param name="photoId">To be added.</param>
+        <param name="dateTaken">To be added.</param>
+        <param name="granularity">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosSetDates">
+      <MemberSignature Language="C#" Value="public bool PhotosSetDates (string photoId, DateTime datePosted);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="photoId" Type="System.String" />
+        <Parameter Name="datePosted" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="photoId">To be added.</param>
+        <param name="datePosted">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosSetDates">
+      <MemberSignature Language="C#" Value="public bool PhotosSetDates (string photoId, DateTime datePosted, DateTime dateTaken, FlickrNet.DateGranularity granularity);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="photoId" Type="System.String" />
+        <Parameter Name="datePosted" Type="System.DateTime" />
+        <Parameter Name="dateTaken" Type="System.DateTime" />
+        <Parameter Name="granularity" Type="FlickrNet.DateGranularity" />
+      </Parameters>
+      <Docs>
+        <param name="photoId">To be added.</param>
+        <param name="datePosted">To be added.</param>
+        <param name="dateTaken">To be added.</param>
+        <param name="granularity">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosSetMeta">
+      <MemberSignature Language="C#" Value="public bool PhotosSetMeta (string photoId, string title, string description);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="photoId" Type="System.String" />
+        <Parameter Name="title" Type="System.String" />
+        <Parameter Name="description" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="photoId">To be added.</param>
+        <param name="title">To be added.</param>
+        <param name="description">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosSetPerms">
+      <MemberSignature Language="C#" Value="public bool PhotosSetPerms (string photoId, int isPublic, int isFriend, int isFamily, FlickrNet.PermissionComment permComment, FlickrNet.PermissionAddMeta permAddMeta);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="photoId" Type="System.String" />
+        <Parameter Name="isPublic" Type="System.Int32" />
+        <Parameter Name="isFriend" Type="System.Int32" />
+        <Parameter Name="isFamily" Type="System.Int32" />
+        <Parameter Name="permComment" Type="FlickrNet.PermissionComment" />
+        <Parameter Name="permAddMeta" Type="FlickrNet.PermissionAddMeta" />
+      </Parameters>
+      <Docs>
+        <param name="photoId">To be added.</param>
+        <param name="isPublic">To be added.</param>
+        <param name="isFriend">To be added.</param>
+        <param name="isFamily">To be added.</param>
+        <param name="permComment">To be added.</param>
+        <param name="permAddMeta">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosSetPerms">
+      <MemberSignature Language="C#" Value="public bool PhotosSetPerms (string photoId, bool isPublic, bool isFriend, bool isFamily, FlickrNet.PermissionComment permComment, FlickrNet.PermissionAddMeta permAddMeta);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="photoId" Type="System.String" />
+        <Parameter Name="isPublic" Type="System.Boolean" />
+        <Parameter Name="isFriend" Type="System.Boolean" />
+        <Parameter Name="isFamily" Type="System.Boolean" />
+        <Parameter Name="permComment" Type="FlickrNet.PermissionComment" />
+        <Parameter Name="permAddMeta" Type="FlickrNet.PermissionAddMeta" />
+      </Parameters>
+      <Docs>
+        <param name="photoId">To be added.</param>
+        <param name="isPublic">To be added.</param>
+        <param name="isFriend">To be added.</param>
+        <param name="isFamily">To be added.</param>
+        <param name="permComment">To be added.</param>
+        <param name="permAddMeta">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosSetTags">
+      <MemberSignature Language="C#" Value="public bool PhotosSetTags (string photoId, string[] tags);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="photoId" Type="System.String" />
+        <Parameter Name="tags" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="photoId">To be added.</param>
+        <param name="tags">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosSetTags">
+      <MemberSignature Language="C#" Value="public bool PhotosSetTags (string photoId, string tags);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="photoId" Type="System.String" />
+        <Parameter Name="tags" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="photoId">To be added.</param>
+        <param name="tags">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosCommentsGetList">
+      <MemberSignature Language="C#" Value="public FlickrNet.Comment[] PhotosCommentsGetList (string photoId);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Comment[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="photoId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="photoId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosetsAddPhoto">
+      <MemberSignature Language="C#" Value="public void PhotosetsAddPhoto (string photosetId, string photoId);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="photosetId" Type="System.String" />
+        <Parameter Name="photoId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="photosetId">To be added.</param>
+        <param name="photoId">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosetsCreate">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photoset PhotosetsCreate (string title, string primaryPhotoId);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photoset</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="title" Type="System.String" />
+        <Parameter Name="primaryPhotoId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="title">To be added.</param>
+        <param name="primaryPhotoId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosetsCreate">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photoset PhotosetsCreate (string title, string description, string primaryPhotoId);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photoset</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="title" Type="System.String" />
+        <Parameter Name="description" Type="System.String" />
+        <Parameter Name="primaryPhotoId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="title">To be added.</param>
+        <param name="description">To be added.</param>
+        <param name="primaryPhotoId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosetsDelete">
+      <MemberSignature Language="C#" Value="public bool PhotosetsDelete (string photosetId);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="photosetId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="photosetId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosetsEditMeta">
+      <MemberSignature Language="C#" Value="public bool PhotosetsEditMeta (string photosetId, string title, string description);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="photosetId" Type="System.String" />
+        <Parameter Name="title" Type="System.String" />
+        <Parameter Name="description" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="photosetId">To be added.</param>
+        <param name="title">To be added.</param>
+        <param name="description">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosetsEditPhotos">
+      <MemberSignature Language="C#" Value="public bool PhotosetsEditPhotos (string photosetId, string primaryPhotoId, string[] photoIds);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="photosetId" Type="System.String" />
+        <Parameter Name="primaryPhotoId" Type="System.String" />
+        <Parameter Name="photoIds" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="photosetId">To be added.</param>
+        <param name="primaryPhotoId">To be added.</param>
+        <param name="photoIds">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosetsEditPhotos">
+      <MemberSignature Language="C#" Value="public bool PhotosetsEditPhotos (string photosetId, string primaryPhotoId, string photoIds);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="photosetId" Type="System.String" />
+        <Parameter Name="primaryPhotoId" Type="System.String" />
+        <Parameter Name="photoIds" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="photosetId">To be added.</param>
+        <param name="primaryPhotoId">To be added.</param>
+        <param name="photoIds">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosetsGetContext">
+      <MemberSignature Language="C#" Value="public FlickrNet.Context PhotosetsGetContext (string photoId, string photosetId);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Context</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="photoId" Type="System.String" />
+        <Parameter Name="photosetId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="photoId">To be added.</param>
+        <param name="photosetId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosetsGetInfo">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photoset PhotosetsGetInfo (string photosetId);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photoset</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="photosetId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="photosetId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosetsGetList">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photosets PhotosetsGetList ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photosets</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosetsGetList">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photosets PhotosetsGetList (string userId);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photosets</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="userId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosetsGetPhotos">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photo[] PhotosetsGetPhotos (string photosetId);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photo[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="photosetId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="photosetId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosetsGetPhotos">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photo[] PhotosetsGetPhotos (string photosetId, FlickrNet.PrivacyFilter privacyFilter);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photo[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="photosetId" Type="System.String" />
+        <Parameter Name="privacyFilter" Type="FlickrNet.PrivacyFilter" />
+      </Parameters>
+      <Docs>
+        <param name="photosetId">To be added.</param>
+        <param name="privacyFilter">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosetsGetPhotos">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photo[] PhotosetsGetPhotos (string photosetId, FlickrNet.PhotoSearchExtras extras);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photo[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="photosetId" Type="System.String" />
+        <Parameter Name="extras" Type="FlickrNet.PhotoSearchExtras" />
+      </Parameters>
+      <Docs>
+        <param name="photosetId">To be added.</param>
+        <param name="extras">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosetsGetPhotos">
+      <MemberSignature Language="C#" Value="public FlickrNet.Photo[] PhotosetsGetPhotos (string photosetId, FlickrNet.PhotoSearchExtras extras, FlickrNet.PrivacyFilter privacyFilter);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Photo[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="photosetId" Type="System.String" />
+        <Parameter Name="extras" Type="FlickrNet.PhotoSearchExtras" />
+        <Parameter Name="privacyFilter" Type="FlickrNet.PrivacyFilter" />
+      </Parameters>
+      <Docs>
+        <param name="photosetId">To be added.</param>
+        <param name="extras">To be added.</param>
+        <param name="privacyFilter">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosetsOrderSets">
+      <MemberSignature Language="C#" Value="public void PhotosetsOrderSets (string[] photosetIds);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="photosetIds" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="photosetIds">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosetsOrderSets">
+      <MemberSignature Language="C#" Value="public void PhotosetsOrderSets (string photosetIds);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="photosetIds" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="photosetIds">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotosetsRemovePhoto">
+      <MemberSignature Language="C#" Value="public void PhotosetsRemovePhoto (string photosetId, string photoId);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="photosetId" Type="System.String" />
+        <Parameter Name="photoId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="photosetId">To be added.</param>
+        <param name="photoId">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TagsGetListPhoto">
+      <MemberSignature Language="C#" Value="public FlickrNet.PhotoInfo TagsGetListPhoto (string photoId);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.PhotoInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="photoId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="photoId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TagsGetListUser">
+      <MemberSignature Language="C#" Value="public FlickrNet.Tag[] TagsGetListUser ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Tag[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TagsGetListUser">
+      <MemberSignature Language="C#" Value="public FlickrNet.Tag[] TagsGetListUser (string userId);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Tag[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="userId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TagsGetListUserPopular">
+      <MemberSignature Language="C#" Value="public FlickrNet.Tag[] TagsGetListUserPopular ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Tag[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TagsGetListUserPopular">
+      <MemberSignature Language="C#" Value="public FlickrNet.Tag[] TagsGetListUserPopular (int count);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Tag[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="count">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TagsGetListUserPopular">
+      <MemberSignature Language="C#" Value="public FlickrNet.Tag[] TagsGetListUserPopular (string userId);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Tag[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="userId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TagsGetListUserPopular">
+      <MemberSignature Language="C#" Value="public FlickrNet.Tag[] TagsGetListUserPopular (string userId, long count);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Tag[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="count" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="userId">To be added.</param>
+        <param name="count">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TagsGetRelated">
+      <MemberSignature Language="C#" Value="public FlickrNet.Tag[] TagsGetRelated (string tag);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Tag[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tag" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="tag">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TestEcho">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlElement[] TestEcho (string echoParameter, string echoValue);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlElement[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="echoParameter" Type="System.String" />
+        <Parameter Name="echoValue" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="echoParameter">To be added.</param>
+        <param name="echoValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TestLogin">
+      <MemberSignature Language="C#" Value="public FlickrNet.FoundUser TestLogin ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.FoundUser</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UrlsGetGroup">
+      <MemberSignature Language="C#" Value="public FlickrNet.GroupFullInfo UrlsGetGroup (string groupId);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.GroupFullInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="groupId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="groupId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UrlsGetUserPhotos">
+      <MemberSignature Language="C#" Value="public Uri UrlsGetUserPhotos ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UrlsGetUserPhotos">
+      <MemberSignature Language="C#" Value="public Uri UrlsGetUserPhotos (string userId);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="userId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UrlsGetUserProfile">
+      <MemberSignature Language="C#" Value="public Uri UrlsGetUserProfile ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UrlsGetUserProfile">
+      <MemberSignature Language="C#" Value="public Uri UrlsGetUserProfile (string userId);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="userId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UrlsLookupGroup">
+      <MemberSignature Language="C#" Value="public FlickrNet.GroupFullInfo UrlsLookupGroup (string urlToFind);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.GroupFullInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="urlToFind" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="urlToFind">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UrlsLookupUser">
+      <MemberSignature Language="C#" Value="public FlickrNet.FoundUser UrlsLookupUser (string urlToFind);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.FoundUser</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="urlToFind" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="urlToFind">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReflectionGetMethods">
+      <MemberSignature Language="C#" Value="public string[] ReflectionGetMethods ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReflectionGetMethodInfo">
+      <MemberSignature Language="C#" Value="public FlickrNet.Method ReflectionGetMethodInfo (string methodName);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.Method</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="methodName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="methodName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApiKey">
+      <MemberSignature Language="C#" Value="public string ApiKey { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApiSecret">
+      <MemberSignature Language="C#" Value="public string ApiSecret { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApiToken">
+      <MemberSignature Language="C#" Value="public string ApiToken { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CacheDisabled">
+      <MemberSignature Language="C#" Value="public static bool CacheDisabled { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CacheTimeout">
+      <MemberSignature Language="C#" Value="public static TimeSpan CacheTimeout { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CacheLocation">
+      <MemberSignature Language="C#" Value="public static string CacheLocation { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CacheSize">
+      <MemberSignature Language="C#" Value="public static long CacheSize { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CacheSizeLimit">
+      <MemberSignature Language="C#" Value="public static long CacheSizeLimit { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HttpTimeout">
+      <MemberSignature Language="C#" Value="public int HttpTimeout { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsAuthenticated">
+      <MemberSignature Language="C#" Value="public bool IsAuthenticated { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastResponse">
+      <MemberSignature Language="C#" Value="public string LastResponse { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastRequest">
+      <MemberSignature Language="C#" Value="public string LastRequest { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Proxy">
+      <MemberSignature Language="C#" Value="public System.Net.WebProxy Proxy { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Net.WebProxy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

@@ -1,0 +1,58 @@
+<Type Name="PhotoInfoPermissions" FullName="FlickrNet.PhotoInfoPermissions">
+  <TypeSignature Language="C#" Value="public class PhotoInfoPermissions" />
+  <AssemblyInfo>
+    <AssemblyName>flickr-sharp</AssemblyName>
+    <AssemblyVersion>2.0.3.28704</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PhotoInfoPermissions ();" />
+      <MemberType>Constructor</MemberType>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PermissionComment">
+      <MemberSignature Language="C#" Value="public FlickrNet.PermissionComment PermissionComment;" />
+      <MemberType>Field</MemberType>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute(AttributeName="permcomment", DataType="", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Namespace=null, Type=null)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>FlickrNet.PermissionComment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PermissionAddMeta">
+      <MemberSignature Language="C#" Value="public FlickrNet.PermissionAddMeta PermissionAddMeta;" />
+      <MemberType>Field</MemberType>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute(AttributeName="permaddmeta", DataType="", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Namespace=null, Type=null)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>FlickrNet.PermissionAddMeta</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

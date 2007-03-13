@@ -1,0 +1,81 @@
+<Type Name="Utils" FullName="FlickrNet.Utils">
+  <TypeSignature Language="C#" Value="public sealed class Utils" />
+  <AssemblyInfo>
+    <AssemblyName>flickr-sharp</AssemblyName>
+    <AssemblyVersion>2.0.3.28704</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Members>
+    <Member MemberName="DateToUnixTimestamp">
+      <MemberSignature Language="C#" Value="public static long DateToUnixTimestamp (DateTime date);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="date" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="date">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnixTimestampToDate">
+      <MemberSignature Language="C#" Value="public static DateTime UnixTimestampToDate (string timestamp);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timestamp" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="timestamp">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnixTimestampToDate">
+      <MemberSignature Language="C#" Value="public static DateTime UnixTimestampToDate (long timestamp);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timestamp" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="timestamp">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExtrasToString">
+      <MemberSignature Language="C#" Value="public static string ExtrasToString (FlickrNet.PhotoSearchExtras extras);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="extras" Type="FlickrNet.PhotoSearchExtras" />
+      </Parameters>
+      <Docs>
+        <param name="extras">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

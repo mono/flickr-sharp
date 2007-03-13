@@ -1,0 +1,121 @@
+<Type Name="PhotoSearchExtras" FullName="FlickrNet.PhotoSearchExtras">
+  <TypeSignature Language="C#" Value="public enum PhotoSearchExtras" />
+  <AssemblyInfo>
+    <AssemblyName>flickr-sharp</AssemblyName>
+    <AssemblyVersion>2.0.3.28704</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Members>
+    <Member MemberName="DateUploaded">
+      <MemberSignature Language="C#" Value="DateUploaded" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.PhotoSearchExtras</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="License">
+      <MemberSignature Language="C#" Value="License" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.PhotoSearchExtras</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OriginalFormat">
+      <MemberSignature Language="C#" Value="OriginalFormat" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.PhotoSearchExtras</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IconServer">
+      <MemberSignature Language="C#" Value="IconServer" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.PhotoSearchExtras</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Tags">
+      <MemberSignature Language="C#" Value="Tags" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.PhotoSearchExtras</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LastUpdated">
+      <MemberSignature Language="C#" Value="LastUpdated" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.PhotoSearchExtras</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.PhotoSearchExtras</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="All">
+      <MemberSignature Language="C#" Value="All" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.PhotoSearchExtras</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OwnerName">
+      <MemberSignature Language="C#" Value="OwnerName" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.PhotoSearchExtras</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DateTaken">
+      <MemberSignature Language="C#" Value="DateTaken" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.PhotoSearchExtras</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

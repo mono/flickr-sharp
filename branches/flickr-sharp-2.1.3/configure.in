@@ -1,0 +1,93 @@
+AC_INIT([flickr-sharp], 2.1.3, [sam@wackylabs.net])
+AC_PREREQ(2.53)
+AC_CANONICAL_SYSTEM
+AM_INIT_AUTOMAKE([1.9 tar-ustar])
+AM_MAINTAINER_MODE
+
+AC_PROG_INTLTOOL([0.25])
+
+AC_PROG_INSTALL
+
+dnl pkg-config
+AC_PATH_PROG(PKG_CONFIG, pkg-config, no)
+if test "x$PKG_CONFIG" = "xno"; then
+	AC_MSG_ERROR([You need to install pkg-config])
+fi
+
+dnl C# compiler
+AC_PATH_PROG(CSC,  csc,  no)
+AC_PATH_PROG(MCS,  mcs, no)
+AC_PATH_PROG(MONO, mono, no)
+
+CS="C#"
+if test "x$CSC" = "xno" -a "x$MCS" = "xno"  ; then
+	dnl AC_MSG_ERROR([You need to install a C# compiler])
+	AC_MSG_ERROR([No $CS compiler found])
+fi
+
+if test "x$MCS" = "xno" ; then
+	MCS=$CSC
+fi
+
+if test "x$MONO" = "xno"; then
+	AC_MSG_ERROR([No mono runtime found])
+fi
+
+dnl monodoc
+AC_PATH_PROG(MDASSEMBLER, mdassembler, no)
+AC_PATH_PROG(MONODOCER, monodocer, no)
+if test "x$MONODOCER" = "xno" -o "x$MDASSEMBLER" = "xno"; then
+  enable_monodoc=no
+  doc_sources_dir=
+else
+  enable_monodoc=yes
+  doc_sources_dir="`pkg-config --variable=sourcesdir monodoc`"
+fi
+AC_SUBST(MDASSEMBLER)
+AC_SUBST(MONODOCER)
+AM_CONDITIONAL(ENABLE_MONODOC, test "x$enable_monodoc" = "xyes")
+
+dnl Intl
+ALL_LINGUAS=""
+GETTEXT_PACKAGE=skeleton
+AC_SUBST(GETTEXT_PACKAGE)
+AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE", [Gettext package])
+AM_GLIB_GNU_GETTEXT
+
+dnl nunit
+PKG_CHECK_MODULES(NUNIT, nunit >= 2.2.0,
+[
+  NUNIT_LIBS=$NUNIT_LIBS
+],
+[
+  PKG_CHECK_MODULES(MONO_NUNIT, mono-nunit >= 1.1.9)
+  NUNIT_LIBS=$MONO_NUNIT_LIBS
+])
+AC_SUBST(NUNIT_LIBS)
+
+CSC_FLAGS=""
+
+FLICKRSHARP_DIR='$(prefix)/lib/flickr-sharp'
+
+AC_SUBST(MCS)
+AC_SUBST(FLICKRSHARP_DIR)
+AC_SUBST(CSC_FLAGS)
+
+AC_OUTPUT([
+flickr-sharp.pc
+Makefile
+src/Makefile
+src/FlickrNet/Makefile
+doc/Makefile
+po/Makefile.in
+])
+
+echo "
+flickr-sharp-$VERSION
+
+    Install Prefix:    ${prefix}
+    Mono C# Compiler:  ${MCS}
+    Mono Runtime:      ${MONO}
+
+    Documentation:     ${enable_monodoc}
+"

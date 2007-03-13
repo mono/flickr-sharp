@@ -1,0 +1,67 @@
+<Type Name="FlickrException" FullName="FlickrNet.FlickrException">
+  <TypeSignature Language="C#" Value="public class FlickrException : System.Exception" />
+  <AssemblyInfo>
+    <AssemblyName>flickr-sharp</AssemblyName>
+    <AssemblyVersion>2.0.3.28704</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Exception</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FlickrException (int code, string verbose);" />
+      <MemberType>Constructor</MemberType>
+      <Parameters>
+        <Parameter Name="code" Type="System.Int32" />
+        <Parameter Name="verbose" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="code">To be added.</param>
+        <param name="verbose">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FlickrException (FlickrNet.ResponseError error);" />
+      <MemberType>Constructor</MemberType>
+      <Parameters>
+        <Parameter Name="error" Type="FlickrNet.ResponseError" />
+      </Parameters>
+      <Docs>
+        <param name="error">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Code">
+      <MemberSignature Language="C#" Value="public int Code { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Verbose">
+      <MemberSignature Language="C#" Value="public string Verbose { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>
