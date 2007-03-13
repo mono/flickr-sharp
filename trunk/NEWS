@@ -1,0 +1,8 @@
+-- flickr-sharp/Flickr.Net library 2.1.3 release --
+
+The flickr-sharp/Flickr.Net API is a .Net Library for accessing the Flickr API. Written 
+entirely in C# it can be accessed from with any .Net language in .Net Framework 1.1 and 
+.Net Framework 2.0. We are working trying to get it working in the .NET Compact Framework.
+
+You can contact me at sam AT wackylabs.net if you'd like to join the project.
+See my Flickr homepage at http://www.flickr.com/photos/samjudson

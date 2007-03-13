@@ -1,0 +1,96 @@
+<Type Name="PhotoSearchSortOrder" FullName="FlickrNet.PhotoSearchSortOrder">
+  <TypeSignature Language="C#" Value="public enum PhotoSearchSortOrder" />
+  <AssemblyInfo>
+    <AssemblyName>flickr-sharp</AssemblyName>
+    <AssemblyVersion>2.0.3.28704</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Members>
+    <Member MemberName="DateTakenDesc">
+      <MemberSignature Language="C#" Value="DateTakenDesc" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.PhotoSearchSortOrder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DateTakenAsc">
+      <MemberSignature Language="C#" Value="DateTakenAsc" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.PhotoSearchSortOrder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InterestingnessAsc">
+      <MemberSignature Language="C#" Value="InterestingnessAsc" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.PhotoSearchSortOrder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DatePostedDesc">
+      <MemberSignature Language="C#" Value="DatePostedDesc" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.PhotoSearchSortOrder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Relevance">
+      <MemberSignature Language="C#" Value="Relevance" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.PhotoSearchSortOrder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InterestingnessDesc">
+      <MemberSignature Language="C#" Value="InterestingnessDesc" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.PhotoSearchSortOrder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.PhotoSearchSortOrder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DatePostedAsc">
+      <MemberSignature Language="C#" Value="DatePostedAsc" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.PhotoSearchSortOrder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

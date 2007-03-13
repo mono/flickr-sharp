@@ -1,0 +1,76 @@
+<Type Name="PrivacyFilter" FullName="FlickrNet.PrivacyFilter">
+  <TypeSignature Language="C#" Value="public enum PrivacyFilter" />
+  <AssemblyInfo>
+    <AssemblyName>flickr-sharp</AssemblyName>
+    <AssemblyVersion>2.0.3.28704</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Members>
+    <Member MemberName="PrivateVisibleToFriends">
+      <MemberSignature Language="C#" Value="PrivateVisibleToFriends" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.PrivacyFilter</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PrivateVisibleToFriendsFamily">
+      <MemberSignature Language="C#" Value="PrivateVisibleToFriendsFamily" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.PrivacyFilter</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CompletelyPrivate">
+      <MemberSignature Language="C#" Value="CompletelyPrivate" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.PrivacyFilter</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PublicPhotos">
+      <MemberSignature Language="C#" Value="PublicPhotos" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.PrivacyFilter</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PrivateVisibleToFamily">
+      <MemberSignature Language="C#" Value="PrivateVisibleToFamily" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.PrivacyFilter</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.PrivacyFilter</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

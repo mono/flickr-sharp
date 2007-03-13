@@ -1,0 +1,126 @@
+<Overview>
+  <Assemblies>
+    <Assembly Name="flickr-sharp" Version="2.0.3.28704">
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(Value=False)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(IsCompliant=True)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Security.AllowPartiallyTrustedCallers</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyKeyName(KeyName="")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyTrademark(Trademark="")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyCopyright(Copyright="See website http://www.wackylabs.net/flickr")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyProduct(Product="Flickr .Net Api Library")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyCompany(Company="Sam Judson")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyConfiguration(Configuration="")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyDescription(Description=".Net library for accessing Flickr.com Api functionality")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyTitle(Title="Flickr .Net Api Library")</AttributeName>
+        </Attribute>
+      </Attributes>
+    </Assembly>
+  </Assemblies>
+  <Remarks>To be added.</Remarks>
+  <Copyright>To be added.</Copyright>
+  <Types>
+    <Namespace Name="FlickrNet">
+      <Type Name="ICacheItem" />
+      <Type Name="Auth" />
+      <Type Name="Blogs" />
+      <Type Name="Blog" />
+      <Type Name="ResponseCacheItem" />
+      <Type Name="CacheItemPersister" />
+      <Type Name="PictureCacheItem" />
+      <Type Name="Category" />
+      <Type Name="SubCategory" />
+      <Type Name="Comment" />
+      <Type Name="Contacts" />
+      <Type Name="Contact" />
+      <Type Name="Context" />
+      <Type Name="ContextCount" />
+      <Type Name="ContextPhoto" />
+      <Type Name="AllContexts" />
+      <Type Name="ContextSet" />
+      <Type Name="ContextGroup" />
+      <Type Name="ExifPhoto" />
+      <Type Name="ExifTag" />
+      <Type Name="Flickr" />
+      <Type Name="Flickr+UploadProgressHandler" />
+      <Type Name="FlickrException" />
+      <Type Name="Group" />
+      <Type Name="GroupFullInfo" />
+      <Type Name="MemberGroupInfo" />
+      <Type Name="PublicGroupInfo" />
+      <Type Name="GroupSearchResults" />
+      <Type Name="GroupSearchResultCollection" />
+      <Type Name="GroupSearchResult" />
+      <Type Name="Licenses" />
+      <Type Name="License" />
+      <Type Name="Methods" />
+      <Type Name="Method" />
+      <Type Name="Arguments" />
+      <Type Name="Argument" />
+      <Type Name="MethodError" />
+      <Type Name="Person" />
+      <Type Name="PersonPhotosSummary" />
+      <Type Name="PhotoCounts" />
+      <Type Name="PhotoCountInfo" />
+      <Type Name="PhotoInfo" />
+      <Type Name="PhotoDates" />
+      <Type Name="PhotoInfoOwner" />
+      <Type Name="PhotoInfoVisibility" />
+      <Type Name="PhotoInfoPermissions" />
+      <Type Name="PhotoInfoEditability" />
+      <Type Name="PhotoInfoNotes" />
+      <Type Name="PhotoInfoNote" />
+      <Type Name="PhotoInfoTags" />
+      <Type Name="PhotoInfoTag" />
+      <Type Name="Photos" />
+      <Type Name="Photo" />
+      <Type Name="PhotoPermissions" />
+      <Type Name="PhotoCollection" />
+      <Type Name="PhotoSearchOptions" />
+      <Type Name="Photosets" />
+      <Type Name="Photoset" />
+      <Type Name="Response" />
+      <Type Name="ResponseError" />
+      <Type Name="Sizes" />
+      <Type Name="Size" />
+      <Type Name="Tag" />
+      <Type Name="Uploader" />
+      <Type Name="UploadProgressEventArgs" />
+      <Type Name="FoundUser" />
+      <Type Name="UserStatus" />
+      <Type Name="Utils" />
+      <Type Name="AuthLevel" />
+      <Type Name="DateGranularity" />
+      <Type Name="TagMode" />
+      <Type Name="PoolPrivacy" />
+      <Type Name="PermissionComment" />
+      <Type Name="PermissionAddMeta" />
+      <Type Name="PhotoSearchExtras" />
+      <Type Name="PhotoSearchSortOrder" />
+      <Type Name="PrivacyFilter" />
+      <Type Name="ResponseStatus" />
+    </Namespace>
+  </Types>
+  <Title>FlickrNet</Title>
+</Overview>
