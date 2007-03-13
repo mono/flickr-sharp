@@ -1,0 +1,8 @@
+prefix=@prefix@
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+                                                                                
+Name: flickr-sharp
+Description: Flickr CSharp managed library.
+Version: @VERSION@
+Libs: -r:${libdir}/flickr-sharp/flickr-sharp.dll

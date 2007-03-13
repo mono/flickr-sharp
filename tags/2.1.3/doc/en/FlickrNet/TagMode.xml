@@ -1,0 +1,46 @@
+<Type Name="TagMode" FullName="FlickrNet.TagMode">
+  <TypeSignature Language="C#" Value="public enum TagMode" />
+  <AssemblyInfo>
+    <AssemblyName>flickr-sharp</AssemblyName>
+    <AssemblyVersion>2.0.3.28704</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Members>
+    <Member MemberName="Boolean">
+      <MemberSignature Language="C#" Value="Boolean" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.TagMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AnyTag">
+      <MemberSignature Language="C#" Value="AnyTag" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.TagMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AllTags">
+      <MemberSignature Language="C#" Value="AllTags" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>FlickrNet.TagMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>
